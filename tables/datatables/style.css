@@ -1,0 +1,43 @@
+   /* Desactivar los estilos de las flechas de ordenamiento en el encabezado */
+   table.dataTable thead .sorting:after,
+   table.dataTable thead .sorting_asc:after,
+   table.dataTable thead .sorting_desc:after,
+   table.dataTable thead .sorting_asc_disabled:after,
+   table.dataTable thead .sorting_desc_disabled:after {
+       content: "\2193 \2191";
+   }
+
+   /* Asegúrate de que los estilos del fondo de la columna de ordenamiento se desactiven */
+   thead .sorting, 
+   thead .sorting_asc, 
+   thead .sorting_desc, 
+   thead .sorting_asc_disabled,
+   thead .sorting_desc_disabled {
+       background-image: none !important;
+   }
+   
+
+   .paginate_button{
+    padding: 10px;
+    background: #637A9F;
+    color:white;
+    margin:0 2px;
+    border-radius:2px;
+    text-decoration: none;
+}
+
+.paginate_button:hover{
+    background: #1F2544;
+}
+
+.dataTables_paginate{
+    padding:10px 0;
+}
+
+.current{
+    background: #1F2544;
+}
+
+table.dataTable{
+   box-shadow: 2px 2px 10px #B4B4B8;
+}
